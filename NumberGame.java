@@ -7,13 +7,13 @@ public class NumberGame {
     Random rm = new Random();
     Scanner sc = new Scanner(System.in);
 
-  for(int i=1;true;i++){
+  while(true){
     int number=rm.nextInt(101);
-
+    int attempts=10;
 
     System.out.println("Guess the number from 0 to 100 under 10 attempts");
 
-   for(int j=0;j<10;j++){
+   for(int j=0;j<attempts;j++){
      
       int guess=sc.nextInt();
   
@@ -33,8 +33,11 @@ public class NumberGame {
       else{
         System.out.println("worst guess");
       }   
+      if (j == attempts - 1) {
+        System.out.println("You've used all your attempts. The correct number was " + number);
+    }
   }
-  System.out.println("the right answer is "+number);
+  
   System.out.println("to play again press 1");
   System.out.println("to exit press 0");
   int z=sc.nextInt();
