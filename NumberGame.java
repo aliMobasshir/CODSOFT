@@ -21,7 +21,7 @@ public class NumberGame {
         if (number == guess) {
           System.out.println("correct guess!! the number is " + number);
           break;
-        } else if (Math.abs(number - guess) < 5) {
+        } else if (Math.abs(number - guess) < 5) {  //Math.abs() takes the mod of the value(always +ve)
           System.out.println("almost there");
         } else if (Math.abs(number - guess) < 10) {
           System.out.println("very close");
