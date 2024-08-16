@@ -11,7 +11,7 @@ public class QuizApplicationWithTimer {
 
         System.out.println("Following quiz has 10 questions with 10 seconds of time provided to attempt each\n");
        
-        String[] questions = {
+        String[] questions = {  //String of questions
           "What is the capital of Norway?",
           "Which Mughal emperor was famous as Zinda Pir?",
           "What is the only even prime number?",
@@ -24,7 +24,7 @@ public class QuizApplicationWithTimer {
           "What is the longest river in the world?"
       };
       
-      String[][] options = {
+      String[][] options = {  //String of options
           {"A. Oslo", "B. New York", "C. London", "D. Kolkata"},
           {"A. Akbar", "B. Babur", "C. Aurangzeb", "D. Shahjahan"},
           {"A. 4", "B. 2", "C. 8", "D. 6"},
@@ -37,7 +37,7 @@ public class QuizApplicationWithTimer {
           {"A. Nile", "B. Amazon", "C. Yangtze", "D. Mississippi"}
       };
       
-      char[] answers = {'A', 'C', 'B', 'A', 'A', 'B', 'D', 'C', 'A', 'B'};
+      char[] answers = {'A', 'C', 'B', 'A', 'A', 'B', 'D', 'C', 'A', 'B'}; //STring of answers
       
 
         for (int currentQuestion = 0; currentQuestion < questions.length; currentQuestion++) { //loop for questions
