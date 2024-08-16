@@ -3,21 +3,23 @@ public class StudentGradeCalculator {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
-        String[] subjects ={"Physics","Chemistry","Maths","English","Urdu"};
-        int[] marks =new int [subjects.length];
+        String[] subjects ={"Physics","Chemistry","Maths","English","Urdu"};  //tring of subjects
+        int[] marks =new int [subjects.length];  //String to store marks input by user
         int totalMarks=0;
         int averagePercentage ;
        
-       for(int i=0;i<marks.length;i++){
+       for(int i=0;i<marks.length;i++){  //loop to ask for user input of the marks
             System.out.println("enter marks obtained in "+ subjects[i]);
-            marks[i]=sc.nextInt();
-            totalMarks = totalMarks +marks[i];
+            marks[i]=sc.nextInt();  //user input
+            totalMarks = totalMarks +marks[i];  //summation of marks
        }
        sc.close();
+
        System.out.println("Total Marks Obtained: "+totalMarks);
        averagePercentage = totalMarks/5;
        System.out.println("Average percentage obtained : "+averagePercentage+"%");
 
+       //grading
        if(averagePercentage>90){
            System.out.println("Grade Obtained : A");
        }
@@ -37,7 +39,7 @@ public class StudentGradeCalculator {
        }
 
        String result;
-    result=(averagePercentage>50)?"pass":"fail";
+    result=(averagePercentage>50)?"pass":"fail";  //result 
     System.out.println("Result: "+result);
     
     }
