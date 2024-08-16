@@ -47,6 +47,6 @@ public class NumberGame {
         break;
       }
     }
-    System.out.println("see you next time");  
+    System.out.println("See you next time");  
   }
 }
